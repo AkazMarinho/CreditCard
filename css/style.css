@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1100px;
+  min-height: 780px;
+  display: flex;
+  justify-content: end;
+}
+
+.hide{
+  display: none;
+}
+
+.cardLeft{
+  width: 32%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #220930, #481852 , #2f2c5b 40%, #220930 );
+}
+
+.frontCard, .backCard{
+  position: absolute;
+  width: 420px;
+  height: 230px;
+  border-radius: 10px;
+}
+
+.frontCard{
+  position: absolute;
+  top: 19%;
+  left: 10%;
+  background-image: linear-gradient(to bottom right, #6236e1 ,#a43ce1 30%, #e47268 60% 30%, #608ce3 70%, #630692);
+}
+
+.bigCircle{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 30px;
+  left: 33px;
+}
+
+.smallCircle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: 46px;
+  left: 103px;
+}
+
+.spanNumber{
+  position: absolute;
+  font-size: 25px;
+  color:#fff; 
+  bottom: 60px;
+  left: 33px;
+}
+
+.spanName, .spanDate{
+  bottom: 20px;
+  font-size: 14px;
+  position: absolute;
+  color:#fff; 
+}
+
+.spanDate span{
+  font-size: 14px;
+  color:#fff; 
+}
+
+.spanName{
+  left: 33px;
+}
+
+.spanDate{
+  right: 33px;
+}
+
+.backCard{
+  bottom: 19%;
+  left: 15%;
+  background-image: linear-gradient(to bottom right, #ffffff, #d2d3d8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listCard{
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #2f2f2f;
+}
+
+.details{
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contentCvc{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #adb6bf;
+  width: 85%;
+  height: 37px;
+  border-radius: 5px;
+}
+
+.cvcDetails{
+  font-size: 13px;
+  color:#fff; 
+  margin-right: 10px;
+}
+
+
+.detailsList{
+  width: 200px;
+  height: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.detList_1, .detList_2, .detList_3{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.detList_1 .det_1{
+  width: 90px;
+  height: 4px;
+  background-color: #aeb6bf;
+  border-radius: 4px;
+}
+
+.detList_1 .det_2{
+  width: 40px;
+  height: 4px;
+  background-color:#aeb6bf;
+  border-radius: 4px;
+}
+
+.detList_1 .det_3, .detList_1 .det_4{
+  width: 10px;
+  height: 4px;
+  background-color: #aeb6bf;
+  border-radius: 4px;
+}
+
+
+.detList_2 .det_4{
+  width: 10px;
+  height: 4px;
+  background-color: #aeb6bf;
+  border-radius: 4px;
+}
+
+.detList_2 .det_1{
+  width: 20px;
+  height: 4px;
+  background-color:#aeb6bf;
+  border-radius: 4px;
+}
+
+.detList_2 .det_2, .detList_2 .det_3{
+  width: 40px;
+  height: 4px;
+  background-color: #aeb6bf;
+}
+
+.detList_3 .det_4{
+  width: 90px;
+  height: 4px;
+  background-color: #aeb6bf;
+  border-radius: 4px;
+}
+
+.detList_3 .det_3{
+  width: 40px;
+  height: 4px;
+  background-color:#aeb6bf;
+  border-radius: 4px;
+}
+
+.detList_3 .det_1, .detList_3 .det_2{
+  width: 10px;
+  height: 4px;
+  background-color: #aeb6bf;
+  border-radius: 4px;
+}
+
+
+.container-data{
+  background-color: #fff;
+  width: 68%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  width: 351px;
+  height: 401px;
+  margin-left: 200px;
+}
+
+input, button {
+  margin-top: 10px;
+  width: 351px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  outline: none;
+  font-size: 14px;
+}
+
+button {
+  background-color: #220930;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+}
+
+input:focus{
+  border: 1px solid #00f;
+}
+
+#inputName{
+  margin-bottom: 20px;
+} 
+
+
+.focusInputNumber:focus{
+  border: 1px solid rgb(255, 0, 0);
+}
+
+span{
+  font-size: 10px;
+  color: #f00;
+}
+
+.numberDetails{
+  margin-top: 20px;
+}
+
+.numberDetails input{
+  margin-right: 10px;
+  width: 70px;
+}
+
+.numberDetails, .content-exp-date{
+  display: flex;
+}
+
+#exp-date{
+  padding-left: 20px
+}
+
+.cvc{
+  margin-left: 20px;
+}
+
+.cvc input{
+  width: 170px;
+}
+

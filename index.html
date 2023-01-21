@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="js/script.js" defer></script>
+      <link rel="stylesheet" href="css/style.css"></link>
+      
+   </head>
+   <body>
+      <main>
+         
+         <div class="cardLeft"></div>
+
+         <div class="frontCard">
+            <div class="bigCircle">
+            </div>
+            
+            <div class="smallCircle">
+            </div>
+
+	    <span class="spanNumber">0000 0000 0000 0000</span>
+	    
+	    <span class="spanName">NAME</span>
+	    
+	    <span class="spanDate"> <span class="spanDateMM">00</span> / <span class="spanDateYY">00</span> </span>
+         </div>
+         
+         <div class="backCard">         
+            <div class="listCard">
+               
+            </div>
+         
+            <div class="details">         
+               <div class="contentCvc">
+                  
+                  <span class="cvcDetails">000</span>
+                  
+               </div>
+                        
+               <div class="detailsList">
+                  <div class="detList_1">
+                     <div class="det_1"></div>
+                     <div class="det_2"></div>
+                     <div class="det_3"></div>
+                     <div class="det_4"></div>
+                  </div>
+                  
+                  <div class="detList_2">
+                     <div class="det_1"></div>
+                     <div class="det_2"></div>
+                     <div class="det_3"></div>
+                     <div class="det_4"></div>
+                  </div>
+                  
+                  <div class="detList_3">
+                     <div class="det_1"></div>
+                     <div class="det_2"></div>
+                     <div class="det_3"></div>
+                     <div class="det_4"></div>
+                  </div>
+               </div>
+               
+            </div>
+         
+         </div>
+         
+         <div class="container-data">
+            <form id="form">
+               <label for="inputName">CARDHOLDER NAME</label>
+               <input type="text" id="inputName" maxlength="25" placeholder="e.g. Jane Appleseed">
+               <span id="notNull" class="NameEmpty hide">Can't be blank</span><br>
+
+               <label class="labelNumber" for="inputNumber">CARD NUMBER</label>
+               <input type="text" id="inputNumber" class="errorColor" maxlength="19" placeholder="e.g. 0000 0000 0000 0000">
+               
+               <span id="WrongFormat" class=" hide">Wrong format, numbes only</span>
+               
+               <div class="numberDetails">
+               
+                  <div class="exp-date">
+                     
+                     <label for="exp-date">EXP. DATE</label>
+
+                     <div class="content-exp-date">
+                     
+                        <input type="text" class="exp-date_1" maxlength="2" id="exp-date" placeholder="MM">
+                        <input type="text" class="exp-date_2" maxlength="2" id="exp-date" placeholder="YY">
+                        
+
+                     </div>
+
+                  <span id="notBlankExpDate" class="hide">Can't be blank</span>
+                  </div>
+                     
+                  <div class="cvc">
+                     
+                     <label for="cvc">CVC</label><br>
+                     <input type="text" id="cvc" class="cvcColorError" maxlength="3" placeholder="e.g. 123">
+                  
+                     <span id="notBlankCVC" class="hide" >Can't be blank</span>
+
+                  </div>
+                  
+               </div>
+
+               <button type="submit">Confirm</button>
+            </form>
+
+         </div>
+      </main>
+   </body>
+</html>
